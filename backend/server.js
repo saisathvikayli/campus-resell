@@ -10,8 +10,19 @@ config()
 const app = express()
 
 //middleware
+const allowedOrigins = [
+    'http://localhost:5173',
+    'https://campus-resell-five.vercel.app'
+]
+
 app.use(cors({
-    origin: 'https://campus-resell-i1a9.vercel.app',
+    origin: function (origin, callback) {
+        if (!origin || allowedOrigins.includes(origin)) {
+            callback(null, true)
+        } else {
+            callback(new Error('Not allowed by CORS'))
+        }
+    },
     credentials: true
 }))
 app.use(express.json())
