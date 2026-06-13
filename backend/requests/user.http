@@ -1,0 +1,70 @@
+### get my profile
+GET http://localhost:8000/api/user/profile
+
+### update my profile (text only)
+PUT http://localhost:8000/api/user/profile
+Content-Type: application/json
+
+{
+    "name": "Updated Name",
+    "phone": "9999999999"
+}
+
+### create a listing (use REST Client file upload for images)
+POST http://localhost:8000/api/user/listings
+Content-Type: multipart/form-data; boundary=boundary
+
+--boundary
+Content-Disposition: form-data; name="title"
+
+Sony WH-1000XM3
+--boundary
+Content-Disposition: form-data; name="description"
+
+Used for 3 months, works perfectly
+--boundary
+Content-Disposition: form-data; name="price"
+
+3500
+--boundary
+Content-Disposition: form-data; name="category"
+
+Electronics
+--boundary
+Content-Disposition: form-data; name="condition"
+
+Like New
+--boundary--
+
+### get my listings (all)
+GET http://localhost:8000/api/user/listings
+
+### get my active listings
+GET http://localhost:8000/api/user/listings?status=active
+
+### get my sold listings
+GET http://localhost:8000/api/user/listings?status=sold
+
+### get my expired listings
+GET http://localhost:8000/api/user/listings?status=expired
+
+### edit a listing — replace id with real one
+PUT http://localhost:8000/api/user/listings/LISTING_ID_HERE
+Content-Type: application/json
+
+{
+    "title": "Updated Title",
+    "price": 3000
+}
+
+### mark listing as sold — replace id with real one
+PUT http://localhost:8000/api/user/listings/LISTING_ID_HERE/sold
+
+### renew listing — replace id with real one
+PUT http://localhost:8000/api/user/listings/LISTING_ID_HERE/renew
+
+### delete a listing — replace id with real one
+DELETE http://localhost:8000/api/user/listings/LISTING_ID_HERE
+
+### logout
+POST http://localhost:8000/api/user/logout

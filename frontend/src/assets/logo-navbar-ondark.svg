@@ -1,0 +1,10 @@
+<svg width="210" height="40" viewBox="0 0 210 40" xmlns="http://www.w3.org/2000/svg">
+  <title>CampSwap navbar logo on dark</title>
+  <!-- Pill mark -->
+  <rect x="0" y="6" width="48" height="28" rx="14" fill="rgba(255,255,255,0.12)"/>
+  <polygon points="12,20 22,11 22,29" fill="white"/>
+  <polygon points="36,20 26,11 26,29" fill="#E53935"/>
+  <!-- Wordmark -->
+  <text x="58" y="27" font-family="-apple-system,BlinkMacSystemFont,'DM Sans',sans-serif" font-size="24" font-weight="600" fill="white">Camp</text>
+  <text x="116" y="27" font-family="-apple-system,BlinkMacSystemFont,'DM Sans',sans-serif" font-size="24" font-weight="600" fill="#E53935">Swap</text>
+</svg>

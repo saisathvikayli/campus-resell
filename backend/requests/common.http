@@ -1,0 +1,17 @@
+### get all listings
+GET http://localhost:8000/api/common/listings
+
+### get listings with filters
+GET http://localhost:8000/api/common/listings?category=Books&condition=Good
+
+### get listings with search
+GET http://localhost:8000/api/common/listings?search=maths
+
+### get listings with price range
+GET http://localhost:8000/api/common/listings?minPrice=100&maxPrice=500
+
+### get single listing — replace id with real one
+GET http://localhost:8000/api/common/listings/LISTING_ID_HERE
+
+### get seller profile — replace id with real one
+GET http://localhost:8000/api/common/seller/SELLER_ID_HERE

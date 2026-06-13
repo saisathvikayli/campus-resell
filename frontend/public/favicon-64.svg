@@ -1,0 +1,7 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <title>CampSwap favicon 64x64</title>
+  <defs><clipPath id="c"><rect width="64" height="64" rx="14"/></clipPath></defs>
+  <rect width="64" height="64" rx="14" fill="#0D1B4B"/>
+  <polygon points="0,0 64,0 0,64" fill="#B71C1C" clip-path="url(#c)"/>
+  <text x="36" y="46" font-family="-apple-system,BlinkMacSystemFont,'DM Sans',sans-serif" font-size="26" font-weight="700" fill="white" text-anchor="middle">CS</text>
+</svg>
